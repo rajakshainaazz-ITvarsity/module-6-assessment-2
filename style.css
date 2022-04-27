@@ -1,0 +1,352 @@
+/* defaults */
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color:  #363636;
+    font-family: oswald, sans-serif;
+}
+
+
+/* === homepage === */
+
+/* header */
+
+header{
+    /* border: 1px dashed black; */
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    background-color: #317269;
+}
+
+header h1{
+    letter-spacing: 0.2em;
+    display: inline-block;
+    margin-top: 0px;
+    font-family: marker, sans-serif;
+}
+
+header h1#name-auto{
+    padding-left: 30px;
+}
+
+header h1#name-auto, header h1#name-sale{
+    font-size: 50px;
+    color: white;
+    text-shadow: 4px 6px 0px rgba(0,0,0,0.5);
+}
+
+header h1#name-4{
+    font-size: 80px;
+    color: rgba(247, 150, 22, 1);
+    animation: shake 1s alternate ease-in-out infinite;
+    text-shadow: 4px 6px 0px rgba(0,0,0,0.5);
+}
+
+header a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(247, 150, 22, 1);
+    background-color: #363636;
+    text-transform: uppercase;
+    border: 2px solid rgba(247, 150, 22, 1);
+    border-radius: 10px;
+    padding: 14px 30px;
+    margin: 0 20px;
+}
+
+header a:hover{
+    background-color: rgba(247, 150, 22, 1);
+    color: #363636;
+    border-color: #363636;
+}
+
+header>.row>.row{
+    margin: 55px;
+}
+
+/* content */
+
+div#content{
+    padding: 10px;
+}
+
+
+/* company info */
+
+div#company_info{
+    /* border: 1px dashed black; */
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+
+div#company_info img{
+    width: 100%;
+}
+
+#info-box{
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    background-color: rgba(247, 150, 22, 0.5);
+    width: 40vw;
+    height: 27vw;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#company_info #info-box p{
+    color: #363636;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* featured */
+
+div#featured{
+    height: 280px;
+    /* border: 1px dashed black; */
+    margin-top: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+div#featured ul{
+    list-style-type: none;
+    padding: 0 0 0 30px;
+    margin: 0;
+    line-height: 40px;
+    word-wrap: normal;
+    font-size: 20px;
+}
+
+/* sale */
+
+div#sale{
+    /* border: 1px dashed black; */
+    margin-top: 10px;
+    padding: 10px;
+}
+
+div#sale img{
+    padding-top: 40px;
+}
+
+div#sale > .row > img:hover{
+    transform: scale(3);
+    transition: 1000ms;
+}
+
+div#sale div.sale-text{
+    padding: 10px 0 40px 80px;
+}
+
+div#sale div.sale-text h2{
+    font-size: 30px;
+}
+
+div#sale div.sale-text p{
+    font-size: 20px;
+}
+
+div#sale div.sale-text h3{
+    font-size: 36px;
+}
+
+div#sale div.sale-text .row .row{
+    justify-content: left;
+}
+
+div#sale div.sale-text .row button{
+    margin: 30px 20px;
+    border: 1px solid #363636;
+    border-radius: 10px;
+    background-color: #363636;
+
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+div#sale div.sale-text .row button:hover{
+    animation: bounce 2s alternate ease-in-out infinite;
+}
+
+div#sale>.row>.col-5>button{
+    margin: 16px 10px 16px 0;
+    padding: 5px 10px;
+    background-color: #363636;
+    color: white;
+    border: 1px solid #363636;
+    border-radius: 6px;
+}
+
+div#sale>.row>.col-5>button#current-page{
+    background-color: white;
+    color: #363636;
+}
+
+h2.heading{
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    padding-left: 20px;
+    color:  #317269;
+}
+
+.sale-text h2{
+    text-transform: uppercase;
+}
+
+/* footer */
+
+footer{
+    /* border: 1px dashed black; */
+    padding: 40px 20px;
+    height: 300px;
+    background-color:  #317269;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    display: block;
+    line-height: 30px;
+}
+
+footer > p{
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+/* === contact === */
+
+form{
+    background-color: rgba(247, 150, 22, 0.7);
+    text-align: center;
+    padding: 20px;
+    margin: 30px 10px;
+    border-radius: 10px;
+}
+
+form h2.heading{
+    margin-top: 0px;
+    padding-left: 0;
+}
+
+form input{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    font-size: 20px;
+    border: 1px solid #363636;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+form input[type="submit"]{
+    background-color: #363636;
+    color: white;
+    letter-spacing: 3px;
+}
+
+form input[type="submit"]:hover{
+    background-color: rgba(247, 150, 22, 0.7);
+    color: #363636;
+}
+
+form textarea{
+    width: 80%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid #363636;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.contact > h2{
+    text-align: center;
+    padding-left: 0;
+}
+
+div.contact{
+    text-align: left;
+    margin-top: 24px;
+    font-size: 24px;
+}
+
+
+/* *** basic grid *** */
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-1{width:8.3%;}
+.col-2{width:16.6%;}
+.col-3{width:25%;}
+.col-4{width:33.3%;}
+.col-5{width:41.6%;}
+.col-6{width:50%;}
+.col-7{width:58.3%;}
+.col-8{width:66.6%;}
+.col-9{width:75%;}
+.col-10{width:83.3%;}
+.col-11{width:91.6%;}
+.col-12{width:100%;}
+
+
+/* *** animation *** */
+
+@keyframes shake{
+    from{
+        transform: rotate(45deg);
+    }to{
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes bounce{
+    50%{
+        transform: scale(1.2);
+        background-color: rgba(247, 150, 22, 1);
+        color: #363636;
+    }
+}
+
+
+/* *** fonts *** */
+
+@font-face {
+    font-family: marker;
+    src: url('fonts/Permanent_Marker/PermanentMarker-Regular.ttf');
+}
+
+@font-face {
+    font-family: oswald;
+    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+
